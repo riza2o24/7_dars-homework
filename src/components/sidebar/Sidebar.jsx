@@ -3,6 +3,7 @@ import { HiOutlineArrowUpOnSquare } from "react-icons/hi2"
 import { RiArrowLeftDoubleLine, RiArrowRightDoubleLine } from "react-icons/ri"
 import sort from "../../assets/sort.png"
 import frame from "../../assets/Frame.png"
+import image from "../../assets/image.png"
 function Sidebar({data}) {
     const [open,setOpen] = useState(false)
   return (
@@ -47,16 +48,16 @@ function Sidebar({data}) {
 
         <div className="w-[100%] flex justify-between">
           {/* 1 */}
-          <div className="w-[704px] h-[268px] border-2 border-[#E8EAEE] p-[20px] rounded-[8px] flex items-center justify-between">
+          <div className="w-[704px] h-auto border-2 border-[#E8EAEE] p-[20px] rounded-[8px] flex items-center justify-between">
               <div>
                 <h4 className="text-[#121212] mb-[10px] text-[20px] font-[500]">Total Financial</h4>
 
                 <p className="text-[#B9B8BD] mb-[50px] text-[14px] font-[500]">Jan - Jun 2024</p>
 
                 <div className="flex items-center gap-[60px] mb-[10px]">
-                  <p className="text-[#B9B8BD] mb-[50px] text-[14px] font-[500]">Total Revenue</p>
+                  <p className="text-[#B9B8BD]  text-[14px] font-[500]">Total Revenue</p>
 
-                  <img src={frame} alt="frame" />
+                  <img src={frame} alt="frame"  className="w-[64px] h-[30px]"/>
                 </div>
 
                 <h2 className="text-[#121212] mb-[14px] text-[36px] font-[700]">$21,831,00</h2>
@@ -65,7 +66,13 @@ function Sidebar({data}) {
               </div>
 
               <div>
+                  <div className="flex items-center gap-[150px] mb-[30px]">
+                    <h3 className="text-[#121212]  text-[20px] font-[500]">Analytics</h3>
 
+                    <button className="border-2 border-[#E8EAEE] px-[16px] rounded-[8px]  py-[10px] text-[14px] flex items-center text-[#000] gap-[10px] font-[500]"><img src={sort} alt="" /> Filter</button>
+                  </div>
+
+                  <img src={image} alt="image" className="w-[340px] " />
               </div>
           </div>
 
