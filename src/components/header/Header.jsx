@@ -4,7 +4,7 @@ import notification from "../../assets/notification.png"
 
 function Header({logo}) {
   return (
-    <div className=' h-[70px] w-[1440px] m-auto flex items-center justify-between border-b-2 border-[#b4b4b4] '>
+    <div className=' h-[70px] w-[1440px] m-auto flex items-center justify-between border-b-2 border-[#E8EAEE] '>
       <img src={logo} alt="logo" className="w-[150px] h-[40px]" />
 
       <div className='flex items-center gap-[25px]'>
