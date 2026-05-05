@@ -7,8 +7,8 @@ function Sidebar({data}) {
       {/* 1 */}
       <div className={`${open ? "w-[220px] h-[750px] border-r-2 border-[#E8EAEE] ": "w-[80px] h-[750px] border-r-2 border-[#E8EAEE] " }`}>
             <div className={`${open ? "flex items-center flex justify-center gap-[150px] mt-[15px] " : "flex items-center flex justify-center mt-[15px] "}`} >
-                <RiArrowLeftDoubleLine onClick={() => setOpen(open ? !true : false)}/>
-                <RiArrowRightDoubleLine onClick={() => setOpen(open ? true : !false)}/>
+                <RiArrowLeftDoubleLine color="#A49EBD" onClick={() => setOpen(open ? !true : false)}/>
+                <RiArrowRightDoubleLine color="#A49EBD" onClick={() => setOpen(open ? true : !false)}/>
             </div>
 
             <ul>
