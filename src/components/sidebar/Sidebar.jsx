@@ -3,7 +3,7 @@ import { RiArrowLeftDoubleLine, RiArrowRightDoubleLine } from "react-icons/ri"
 function Sidebar({data}) {
     const [open,setOpen] = useState(false)
   return (
-    <div className="flex items-center justify-between  w-[1440px] m-auto ">
+    <div className="flex items-center justify-between  w-[1440px] m-auto gap-[30px] ">
       {/* 1 */}
       <div className={`${open ? "w-[220px] h-[750px] border-r-2 border-[#E8EAEE] ": "w-[80px] h-[750px] border-r-2 border-[#E8EAEE] " }`}>
             <div className={`${open ? "flex items-center flex justify-center gap-[150px] mt-[15px] " : "flex items-center flex justify-center mt-[15px] "}`} >
@@ -33,7 +33,9 @@ function Sidebar({data}) {
 
       {/* 2 */}
       <div>
-        
+        <div  className="flex items-center justify-between">
+          <h2 className="text-[]">Dashboard</h2>
+        </div>
       </div>
     </div>
   )
