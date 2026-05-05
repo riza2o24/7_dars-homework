@@ -1,11 +1,13 @@
 import { useState } from "react"
+import { HiOutlineArrowUpOnSquare } from "react-icons/hi2"
 import { RiArrowLeftDoubleLine, RiArrowRightDoubleLine } from "react-icons/ri"
+import sort from "../../assets/sort.png"
 function Sidebar({data}) {
     const [open,setOpen] = useState(false)
   return (
-    <div className="flex items-center justify-between  w-[1440px] m-auto gap-[30px] ">
+    <div className="flex  justify-between  w-[1440px] m-auto gap-[20px] ">
       {/* 1 */}
-      <div className={`${open ? "w-[220px] h-[750px] border-r-2 border-[#E8EAEE] ": "w-[80px] h-[750px] border-r-2 border-[#E8EAEE] " }`}>
+      <div className={`${open ? "w-[260px] h-[750px] border-r-2 border-[#E8EAEE] ": "w-[80px] h-[750px] border-r-2 border-[#E8EAEE] " }`}>
             <div className={`${open ? "flex items-center flex justify-center gap-[150px] mt-[15px] " : "flex items-center flex justify-center mt-[15px] "}`} >
                 <RiArrowLeftDoubleLine color="#A49EBD" onClick={() => setOpen(open ? !true : false)}/>
                 <RiArrowRightDoubleLine color="#A49EBD" onClick={() => setOpen(open ? true : !false)}/>
@@ -32,12 +34,13 @@ function Sidebar({data}) {
       </div>
 
       {/* 2 */}
-      <div>
-        <div  className="flex items-center justify-between">
+      <div className="w-[100%]">
+        <div  className="flex items-center justify-between h-[70px]">
           <h2 className="text-[28px] text-[#000] font-[500]">Dashboard</h2>
 
           <div className="flex items-center gap-[12px]">
-                <button className="">Export</button>
+                <button className="bg-[#434CE6] px-[16px] rounded-[8px]  py-[10px] text-[14px] flex items-center text-[#fff] gap-[10px] font-[500]">Export <HiOutlineArrowUpOnSquare color="#fff" fontSize={22} /></button>
+                <button className="border-2 border-[#E8EAEE] px-[16px] rounded-[8px]  py-[10px] text-[14px] flex items-center text-[#000] gap-[10px] font-[500]"><img src={sort} alt="" /> Filter</button>
           </div>
         </div>
       </div>
