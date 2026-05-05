@@ -36,7 +36,9 @@ function Sidebar({data}) {
         <div  className="flex items-center justify-between">
           <h2 className="text-[28px] text-[#000] font-[500]">Dashboard</h2>
 
-          <div></div>
+          <div className="flex items-center gap-[12px]">
+                <button className="">Export</button>
+          </div>
         </div>
       </div>
     </div>
