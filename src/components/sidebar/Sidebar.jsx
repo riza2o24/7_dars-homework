@@ -43,6 +43,21 @@ function Sidebar({data}) {
                 <button className="border-2 border-[#E8EAEE] px-[16px] rounded-[8px]  py-[10px] text-[14px] flex items-center text-[#000] gap-[10px] font-[500]"><img src={sort} alt="" /> Filter</button>
           </div>
         </div>
+
+        <div className="w-[100%] flex justify-between">
+          {/* 1 */}
+          <div className="w-[704px] h-[268px] border-2 border-[#E8EAEE] p-[20px] rounded-[8px]">
+              <div>
+                
+              </div>
+
+              <div>
+                
+              </div>
+          </div>
+
+          {/* 2 */}
+        </div>
       </div>
     </div>
   )
