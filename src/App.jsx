@@ -5,7 +5,7 @@ import dashboard from './assets/category.png'
 import order from './assets/order.png'
 import statistics from './assets/statistics.png'
 import customers from './assets/customers.png'
-import messages from './assets/Messages.png'
+import messages from './assets/messages.png'
 import authentication from './assets/authentication.png'
 import HelpCenter from './assets/HelpCenter.png'
 import Header from './components/header/Header';
