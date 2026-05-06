@@ -5,6 +5,7 @@ import sort from "../../assets/sort.png"
 import frame from "../../assets/Frame.png"
 import image from "../../assets/image.png"
 import add from "../../assets/add.png"
+import rewq from "../../assets/rewq.png"
 function Sidebar({data}) {
     const [open,setOpen] = useState(false)
   return (
@@ -47,7 +48,7 @@ function Sidebar({data}) {
           </div>
         </div>
 
-        <div className="w-[100%] flex justify-between">
+        <div className="w-[100%] flex justify-between mb-[16px]">
           {/* 1 */}
           <div className="w-[704px] h-auto border-2 border-[#E8EAEE] p-[20px] rounded-[8px] flex items-center justify-between">
               <div>
@@ -88,12 +89,22 @@ function Sidebar({data}) {
 
                 <h2 className="text-[#121212] text-[28px] font-[500] w-[318px] ">Elevate Your Experience with Premium Access!</h2>
 
-                <p className="text-[#B9B8BD] mt-[8px] mb-[25px] text-[12px] font-[500]">Unlock your full potential and elevate your skills with our cutting-edge</p>
-
-                <div className="flex  items-center justify-between">
-                  
-                </div>
+                <p className="text-[#B9B8BD] mt-[8px] mb-[55px] text-[12px] font-[500] w-[220px]">Unlock your full potential and elevate your skills with our cutting-edge</p>
+                
+                <img src={rewq} alt="icon" />
           </div>
+        </div>
+
+        <div className="flex items-center justify-between">
+            <div className="w-[704px] h-auto border-2 border-[#E8EAEE] p-[20px] rounded-[8px]">
+                <div className="flex m-[12px] items-center justify-between ">
+                  <h3 className="text-[20px] text-[#000] font-[500]">Recent Order</h3>
+
+                  <div className="flex items-center gap-[20px]">
+                      <button className="border-2 border-[#E8EAEE] px-[16px] rounded-[8px]  py-[10px] text-[14px] flex items-center text-[#000] gap-[10px] font-[500]"><img src={sort} alt="" /> Monthly</button>
+                  </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
