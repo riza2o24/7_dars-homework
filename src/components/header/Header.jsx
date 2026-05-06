@@ -1,5 +1,5 @@
 import icon from "../../assets/Vector.png"
-import Vector111 from "../../assets/Vector111.png"
+import Vector111 from "../../assets/vector111.png"
 import notification from "../../assets/notification.png"
 
 function Header({logo}) {
