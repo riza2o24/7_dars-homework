@@ -98,7 +98,8 @@ function Sidebar({data}) {
           </div>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex  justify-between">
+          {/* 1 */}
             <div className="w-[704px] h-auto border-2 border-[#E8EAEE] p-[20px] rounded-[8px]">
                 <div className="flex m-[12px] items-center justify-between ">
                   <h3 className="text-[20px] text-[#000] font-[500]">Recent Order</h3>
@@ -216,6 +217,12 @@ function Sidebar({data}) {
                 </div>
 
             </div>
+          {/* 2 */}
+          <div className="w-[430px] h-auto border-2 border-[#E8EAEE] p-[20px] rounded-[8px]">
+              <div className="flex items-center justify-between">
+                <h3 className="text-[] text-[] font-[]">Customer by country</h3>
+              </div>
+          </div>
         </div>
       </div>
     </div>
