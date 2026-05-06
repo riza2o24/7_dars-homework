@@ -6,6 +6,9 @@ import frame from "../../assets/Frame.png"
 import image from "../../assets/image.png"
 import add from "../../assets/add.png"
 import rewq from "../../assets/rewq.png"
+import icon from "../../assets/Vector.png"
+
+
 function Sidebar({data}) {
     const [open,setOpen] = useState(false)
   return (
@@ -101,9 +104,117 @@ function Sidebar({data}) {
                   <h3 className="text-[20px] text-[#000] font-[500]">Recent Order</h3>
 
                   <div className="flex items-center gap-[20px]">
+                      <div className='flex items-center gap-[12px]'>
+                          <img src={icon} alt="" />
+                          <p className='text-[#B9B8BD] text-[14px] font-[500]'>Search something</p>
+                      </div>
+
                       <button className="border-2 border-[#E8EAEE] px-[16px] rounded-[8px]  py-[10px] text-[14px] flex items-center text-[#000] gap-[10px] font-[500]"><img src={sort} alt="" /> Monthly</button>
                   </div>
                 </div>
+
+                {/* 1 */}
+                <div className="w-[100%] h-[75px] flex items-center justify-between p-[16px] border-b-1 border-t-1 border-[#E8EAEE] ">
+                  <div className="flex items-center gap-[8px]">
+                    <div className="w-[45px] h-[45px] bg-[#F7F7F7] rounded-[6px]"></div>
+                    <div>
+                      <h4 className="text-[14px] text-[#000] font-[500]">MacBook Air 13”</h4>
+                      <p className="text-[12px] text-[#B9B8BD] font-[500]">#65563</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-[14px] text-[#000] font-[500]">12/02/2020</h4>
+                    <p className="text-[12px] text-[#B9B8BD] font-[500]">01:34 pm</p>
+                  </div>
+
+                  <p className="text-[12px] text-[#B9B8BD] font-[500]">$982,72</p>
+
+                  <button className="py-[5px] px-[9px] text-[12px] text-[#3FC47C] font-[500] rounded-[6px] bg-[#3FC47C14]">Accepted</button>
+                </div>
+
+                {/* 2 */}
+                <div className="w-[100%] h-[75px] flex items-center justify-between p-[16px] border-b-1  border-[#E8EAEE] ">
+                  <div className="flex items-center gap-[8px]">
+                    <div className="w-[45px] h-[45px] bg-[#F7F7F7] rounded-[6px]"></div>
+                    <div>
+                      <h4 className="text-[14px] text-[#000] font-[500]">MacBook Air 13”</h4>
+                      <p className="text-[12px] text-[#B9B8BD] font-[500]">#65563</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-[14px] text-[#000] font-[500]">12/02/2020</h4>
+                    <p className="text-[12px] text-[#B9B8BD] font-[500]">01:34 pm</p>
+                  </div>
+
+                  <p className="text-[12px] text-[#B9B8BD] font-[500]">$982,72</p>
+
+                  <button className="py-[5px] px-[9px] text-[12px] text-[#FF3A44] font-[500] rounded-[6px] bg-[#FF3A4414]">Accepted</button>
+                </div>
+
+                {/* 3 */}
+                <div className="w-[100%] h-[75px] flex items-center justify-between p-[16px] border-b-1  border-[#E8EAEE] ">
+                  <div className="flex items-center gap-[8px]">
+                    <div className="w-[45px] h-[45px] bg-[#F7F7F7] rounded-[6px]"></div>
+                    <div>
+                      <h4 className="text-[14px] text-[#000] font-[500]">MacBook Air 13”</h4>
+                      <p className="text-[12px] text-[#B9B8BD] font-[500]">#65563</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-[14px] text-[#000] font-[500]">12/02/2020</h4>
+                    <p className="text-[12px] text-[#B9B8BD] font-[500]">01:34 pm</p>
+                  </div>
+
+                  <p className="text-[12px] text-[#B9B8BD] font-[500]">$982,72</p>
+
+                  <button className="py-[5px] px-[9px] text-[12px] text-[#FF9C3A] font-[500] rounded-[6px] bg-[#FF9C3A14]">Accepted</button>
+                </div>
+
+
+                {/* 4 */}
+                <div className="w-[100%] h-[75px] flex items-center justify-between p-[16px] border-b-1  border-[#E8EAEE] ">
+                  <div className="flex items-center gap-[8px]">
+                    <div className="w-[45px] h-[45px] bg-[#F7F7F7] rounded-[6px]"></div>
+                    <div>
+                      <h4 className="text-[14px] text-[#000] font-[500]">MacBook Air 13”</h4>
+                      <p className="text-[12px] text-[#B9B8BD] font-[500]">#65563</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-[14px] text-[#000] font-[500]">12/02/2020</h4>
+                    <p className="text-[12px] text-[#B9B8BD] font-[500]">01:34 pm</p>
+                  </div>
+
+                  <p className="text-[12px] text-[#B9B8BD] font-[500]">$982,72</p>
+
+                  <button className="py-[5px] px-[9px] text-[12px] text-[#3FC47C] font-[500] rounded-[6px] bg-[#3FC47C14]">Accepted</button>
+                </div>
+
+
+                {/* 5 */}
+                <div className="w-[100%] h-[75px] flex items-center justify-between p-[16px] border-b-1  border-[#E8EAEE] ">
+                  <div className="flex items-center gap-[8px]">
+                    <div className="w-[45px] h-[45px] bg-[#F7F7F7] rounded-[6px]"></div>
+                    <div>
+                      <h4 className="text-[14px] text-[#000] font-[500]">MacBook Air 13”</h4>
+                      <p className="text-[12px] text-[#B9B8BD] font-[500]">#65563</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-[14px] text-[#000] font-[500]">12/02/2020</h4>
+                    <p className="text-[12px] text-[#B9B8BD] font-[500]">01:34 pm</p>
+                  </div>
+
+                  <p className="text-[12px] text-[#B9B8BD] font-[500]">$982,72</p>
+
+                  <button className="py-[5px] px-[9px] text-[12px] text-[#FF9C3A] font-[500] rounded-[6px] bg-[#FF9C3A14]">Accepted</button>
+                </div>
+
             </div>
         </div>
       </div>
