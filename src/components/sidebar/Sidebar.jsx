@@ -7,7 +7,8 @@ import image from "../../assets/image.png"
 import add from "../../assets/add.png"
 import rewq from "../../assets/rewq.png"
 import icon from "../../assets/Vector.png"
-
+import Vectors from "../../assets/Vectors.png"
+import Earth from "../../assets/Earth.png"
 
 function Sidebar({data}) {
     const [open,setOpen] = useState(false)
@@ -195,33 +196,16 @@ function Sidebar({data}) {
                   <button className="py-[5px] px-[9px] text-[12px] text-[#3FC47C] font-[500] rounded-[6px] bg-[#3FC47C14]">Accepted</button>
                 </div>
 
-
-                {/* 5 */}
-                <div className="w-[100%] h-[75px] flex items-center justify-between p-[16px] border-b-1  border-[#E8EAEE] ">
-                  <div className="flex items-center gap-[8px]">
-                    <div className="w-[45px] h-[45px] bg-[#F7F7F7] rounded-[6px]"></div>
-                    <div>
-                      <h4 className="text-[14px] text-[#000] font-[500]">MacBook Air 13”</h4>
-                      <p className="text-[12px] text-[#B9B8BD] font-[500]">#65563</p>
-                    </div>
-                  </div>
-
-                  <div>
-                    <h4 className="text-[14px] text-[#000] font-[500]">12/02/2020</h4>
-                    <p className="text-[12px] text-[#B9B8BD] font-[500]">01:34 pm</p>
-                  </div>
-
-                  <p className="text-[12px] text-[#B9B8BD] font-[500]">$982,72</p>
-
-                  <button className="py-[5px] px-[9px] text-[12px] text-[#FF9C3A] font-[500] rounded-[6px] bg-[#FF9C3A14]">Accepted</button>
-                </div>
-
             </div>
           {/* 2 */}
           <div className="w-[430px] h-auto border-2 border-[#E8EAEE] p-[20px] rounded-[8px]">
-              <div className="flex items-center justify-between">
-                <h3 className="text-[] text-[] font-[]">Customer by country</h3>
+              <div className="flex items-center justify-between mb-[30px]">
+                <h3 className="text-[20px] text-[#121212] font-[500]">Customer by country</h3>
+
+                <button className="border-2 border-[#E8EAEE] px-[16px] rounded-[8px]  py-[10px] text-[14px] flex items-center text-[#000] gap-[10px] font-[500]"><img src={Vectors} alt="tr" />Countries</button>
               </div>
+
+              <img src={Earth} className="m-auto" alt="Earth" />
           </div>
         </div>
       </div>
