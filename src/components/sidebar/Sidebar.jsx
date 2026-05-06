@@ -9,6 +9,7 @@ import rewq from "../../assets/rewq.png"
 import icon from "../../assets/Vector.png"
 import Vectors from "../../assets/Vectors.png"
 import Earth from "../../assets/Earth.png"
+import poiuy from "../../assets/poiuy.png"
 
 function Sidebar({data}) {
     const [open,setOpen] = useState(false)
@@ -196,7 +197,28 @@ function Sidebar({data}) {
                   <button className="py-[5px] px-[9px] text-[12px] text-[#3FC47C] font-[500] rounded-[6px] bg-[#3FC47C14]">Accepted</button>
                 </div>
 
+                {/* 3 */}
+                <div className="w-[100%] h-[75px] flex items-center justify-between p-[16px] border-b-1  border-[#E8EAEE] ">
+                  <div className="flex items-center gap-[8px]">
+                    <div className="w-[45px] h-[45px] bg-[#F7F7F7] rounded-[6px]"></div>
+                    <div>
+                      <h4 className="text-[14px] text-[#000] font-[500]">MacBook Air 13”</h4>
+                      <p className="text-[12px] text-[#B9B8BD] font-[500]">#65563</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4 className="text-[14px] text-[#000] font-[500]">12/02/2020</h4>
+                    <p className="text-[12px] text-[#B9B8BD] font-[500]">01:34 pm</p>
+                  </div>
+
+                  <p className="text-[12px] text-[#B9B8BD] font-[500]">$982,72</p>
+
+                  <button className="py-[5px] px-[9px] text-[12px] text-[#FF9C3A] font-[500] rounded-[6px] bg-[#FF9C3A14]">Accepted</button>
+                </div>
+
             </div>
+
           {/* 2 */}
           <div className="w-[430px] h-auto border-2 border-[#E8EAEE] p-[20px] rounded-[8px]">
               <div className="flex items-center justify-between mb-[30px]">
@@ -206,6 +228,50 @@ function Sidebar({data}) {
               </div>
 
               <img src={Earth} className="m-auto" alt="Earth" />
+
+              <div className="flex items-center justify-between ">
+                <div>
+                  <div className="flex items-center gap-[90px] mb-[10px]">
+                    <h5 className="text-[16px] text-[#121212] font-[500]">USA</h5>
+
+                    <p className="text-[14px] text-[#B9B8BD] font-[500]">12.4</p>
+                  </div>
+
+                  <img src={poiuy} alt="image" />
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-[90px] mb-[10px]">
+                    <h5 className="text-[16px] text-[#121212] font-[500]">Spain</h5>
+
+                    <p className="text-[14px] text-[#B9B8BD] font-[500]">12.4</p>
+                  </div>
+
+                  <img src={poiuy} alt="image" />
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between mt-[20px] ">
+                <div>
+                  <div className="flex items-center gap-[90px] mb-[10px]">
+                    <h5 className="text-[16px] text-[#121212] font-[500]">Rusia</h5>
+
+                    <p className="text-[14px] text-[#B9B8BD] font-[500]">12.4</p>
+                  </div>
+
+                  <img src={poiuy} alt="image" />
+                </div>
+
+                <div>
+                  <div className="flex items-center gap-[90px] mb-[10px]">
+                    <h5 className="text-[16px] text-[#121212] font-[500]">Italy</h5>
+
+                    <p className="text-[14px] text-[#B9B8BD] font-[500]">12.4</p>
+                  </div>
+
+                  <img src={poiuy} alt="image" />
+                </div>
+              </div>
           </div>
         </div>
       </div>
