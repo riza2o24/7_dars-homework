@@ -16,7 +16,7 @@ function Sidebar({data}) {
   return (
     <div className="flex  justify-between  w-[1440px] m-auto gap-[20px] ">
       {/* 1 */}
-      <div className={`${open ? "w-[260px] h-[750px] border-r-2 border-[#E8EAEE] ": "w-[80px] h-[750px] border-r-2 border-[#E8EAEE] " }`}>
+      <div className={`${open ? "w-[260px] h-[950px] border-r-2 border-[#E8EAEE] ": "w-[80px] h-[950px] border-r-2 border-[#E8EAEE] " }`}>
             <div className={`${open ? "flex items-center flex justify-center gap-[150px] mt-[15px] " : "flex items-center flex justify-center mt-[15px] "}`} >
                 <RiArrowLeftDoubleLine color="#A49EBD" onClick={() => setOpen(open ? !true : false)}/>
                 <RiArrowRightDoubleLine color="#A49EBD" onClick={() => setOpen(open ? true : !false)}/>
@@ -24,10 +24,10 @@ function Sidebar({data}) {
 
             <ul>
                 {data.map((item , index) => (
-                  <div className="flex justify-center">
+                  <div  key={index} className="flex justify-center">
                     <div className={`${open ?" w-[180px] h-[50px] flex items-center  mt-[15px] p-[10px] bg-[#ffffff] rounded-[8px]" :"  h-[50px] flex items-center mt-[15px]" } `}>
                     <div>
-                      <li key={index} className="flex items-center  gap-[12px]">
+                      <li className="flex items-center  gap-[12px]">
                         <img src={item.icon} className="w-[25px]" alt="icon" />
                         <a href={item.link} className={`${open ? "block text-[16px] text-[#A49EBD] font-[500]" : "hidden" }`}>{item.title}</a>
                       </li>
